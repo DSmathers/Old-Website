@@ -4,6 +4,8 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 .navbar {
     position: fixed;
     display: flex;
@@ -82,25 +84,43 @@ p{
     line-height: 50px;
 }
 
+.page_section2 {background-color: gainsboro;}
 
-@media only screen and (max-device-width: 1220px) {
+ @media only screen and (min-device-width: 600px)  {
+     a.icon {
+         display:none;
+     }
+ }
+
+
+@media only screen and (max-device-width: 600px) {
     /* styles for mobile browsers smaller than 600px; (mobile) */
     .logo   {
         font-size: 22px;
     }
-   
     .main_nav {display: none;}
     .main_nav a.icon {
         float: right;
         display: block;
         }
-      
-
  }
 
+ @media screen and (max-width: 600px) {
+    .main_nav.responsive {position: relative;}
+    .main_nav.responsive a.icon {
+      right: 0;
+      top: 0;
+    }
+    .main_nav.responsive a {
+        display: flex;
+        background-color: red;
+        right: 0;
+        top: 0;
+    }
 
 
 
 
 
-.page_section2 {background-color: gainsboro;}
+
+
