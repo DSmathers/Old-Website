@@ -22,9 +22,7 @@ body{
     height: 70px;
     z-index: 1;
     background-color: gainsboro;
-
-
-}
+    }
 
 .main_nav   {
     display: flex;
@@ -46,9 +44,11 @@ a{
     margin: 15px;
     text-transform: uppercase;
     text-decoration: none;
-
 }
 
+#main_nav a:hover{
+    border-bottom: 2px solid white;
+}
 
 a:visited{
     color:black;}
@@ -93,61 +93,28 @@ p{
 }
 
 
-    @media (max-width: 1200px) and (min-width: 900px) {
-        h1 {
-            font-size: 32px;
-        }
+  @media (max-width: 550px)    {
+      #main_nav a {
+        font-size: 12px;
+        margin: 10px;
+        justify-content: space-around;
+      }
 
-        .logo {
-            font-size: 24px;
-        }
+      .navbar{
+          height: 40px;
+          padding: 10px;
+          width: 100%;
+          align-items: center;
+      }
+  }
+    
 
+    
 
-    }
    
 
-    @media screen 
-        and (min-device-width: 600px)
-        and (max-device-width: 1199px) {
-                h1{font-size: 20px;}
-
-        }
 
 
-    @media only screen and (min-device-width: 600px)  {
-        a.icon {
-            display:none;
-     }
-    }
-
-
-    @media only screen and (max-device-width: 600px) {
-    /* styles for mobile browsers smaller than 600px; (mobile) */
-        .logo   {
-            font-size: 22px;
-        }
-        .main_nav {display: none;}
-        .main_nav a.icon {
-            float: right;
-            display: block;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .main_nav.responsive {position: relative;}
-        .main_nav.responsive a.icon {
-            right: 0;
-            top: 0;
-        }
-        .main_nav.responsive a {
-            display: flex;
-            background-color: red;
-            right: 0;
-            top: 0;
-        }
-
-
-}
 
 
 
