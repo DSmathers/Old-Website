@@ -108,13 +108,26 @@ p{
           width: 100%;
           align-items: center;
       }
+
+      .page_section1, .page_section2 {
+          text-align: center;
+      }
+
+      .page_section1 h1, .page_section2 h1 {
+          font-size: 24px;
+      }
     
       a:visited{
         color:black;}
 
-      html {
-          scroll-behavior: smooth;
-      }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .text_area {
+            width: 80%;
+        }
   }
     
 
