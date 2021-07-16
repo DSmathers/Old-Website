@@ -98,6 +98,7 @@ p{
         font-size: 12px;
         margin: 10px;
         justify-content: space-around;
+        text-decoration: none;
       }
 
       .navbar{
@@ -106,6 +107,13 @@ p{
           width: 100%;
           align-items: center;
       }
+
+      #main_nav a:hover{
+        border-bottom: 2px solid white;
+    }
+    
+      a:visited{
+        color:black;}
 
       html {
           scroll-behavior: smooth;
