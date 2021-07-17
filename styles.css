@@ -1,219 +1,151 @@
-html{
+*   {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+a{text-decoration: none;}
 
 
-
-.navbar {
+#navbar {
+    height: 100px;
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
-    height: 70px;
-    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: black;
-    }
-
-.main_nav   {
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    margin-right: 5%;
+    z-index: 1;
 }
 
-.logo  {
-    flex: 1 1 auto;
-    margin-left: 10%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-a{
-    margin: 15px;
-    text-transform: uppercase;
+.page_nav   {
     text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 20px;
+    font-size: 32px;
+    color: gainsboro;
+    border-left: 1px solid gainsboro;
+}
+
+#logo   {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: gainsboro;
+    
+}
+
+.page_nav:hover{
+    border-bottom: 2px inset gainsboro;
+    border-left: 2px inset gainsboro;
     color: gainsboro;
 }
 
-#main_nav a:hover{
-    border-bottom: 2px solid gainsboro;
+
+#page_nav_list  {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom:auto;
 }
 
-a:visited{
-    color: gainsboro;}
+.page_section   {
+    max-width: 100%;
+    padding-top: 100px;
+    
+}
 
-.banner_section    {
-    position: relative;
+.section_title  {
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-family: monospace,sans-serif;
+}
+
+#welcome-section    {
     height: 100vh;
-    background-image: url('Images/laptopbg.jpg');
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(images/laptopbg.jpg);
     background-size: cover;
+    color: gainsboro;
 }
 
-.page_section1, .page_section2    {
+#projects   {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    color: black;
+}
+
+#projects-grid  {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 15px 15px;
+    padding: 25px;
+}
+
+.project-tile   {
+    width: 500px;
+    display: grid;
+    background-color: black;
+    color: gainsboro;
+    box-shadow: 2px 2px black;
+}
+
+.project-thumbnail  {
+    width: 100%;
+    height: auto;
+}
+
+.project_title  {
+    width: 100%;
+    max-height: 35px;
+    font-size: 30px;
+    padding: auto;
+}
+
+.project-tile:hover{
+    border: 3px inset black;
+    box-shadow: 0px 0px;
+}
+
+
+#profile-link   {
+    font-size: 24px;
+    border: 1px solid black;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.25rem;
+    padding: 1rem 1rem;
+    background-color: black;
+    color:gainsboro;
+}
+
+.page_section{
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     min-height: 700px;
 }
 
-.text_area{
+
+.text_area  {
     width: 65%;
-    height: 80%;
 }
-
-.page_section1 h1, .page_section2 h1{
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-
-p{
-    font-size: 24px;
-    line-height: 50px;
-}
-
-.page_section2 {
-    background-color: gainsboro;
-}
-
-/* Contact Form Style */
-
-
-.wrapper    {
-
-    top: 50%;
-    width: 100%;
-    padding: 0 20px;
-}
-
-
-.contact-form   {
-    background-color: rgba(0, 0, 0, .5);
-    max-width: 550px;
-    margin: 0 auto;
-    display: flex;
-    box-shadow:rgba(0, 0, 0, .8);
-    padding: 25px;
-}
-
-.input-fields   {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-}
-
-.input-fields,.msg{
-    width: 48%;
-}
-
-.input-fields .input, .msg textarea  {
-    margin: 10px 0;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid black;
-    padding: 10px;
-    color: gainsboro;
-    width: 100%;
-}
-
-.msg textarea {
-    height: 212px;
-}
-
-::-webkit-input-placeholder{
-    color:gainsboro;
-}
-
-.btn {
-    background-color: gainsboro;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;   
-}
-
-@media screen and (max-width: 600px)    {
-    .contact-form{
-        flex-direction: column;
-    }
-
-    .msg textarea {
-        height: 80px;
-    }
-
-    .input-fields, .msg{
-        width: 100%;
-    }
-}
-
-
-/* End Contact Form Style*/
-
-
-  @media (max-width: 550px)    {
-      #main_nav a {
-        font-size: 12px;
-        margin: 10px;
-        justify-content: space-around;
-        text-decoration: none;
-        color: gainsboro;
-      }
-
-      .navbar{
-          height: auto;
-          width: 100vw;
-          align-items: center;
-          justify-content: center;
-      }
-
-      .page_section1, .page_section2 {
-          text-align: center;
-      }
-
-      .page_section1 h1, .page_section2 h1 {
-          font-size: 24px;
-      }
-    
-      a:visited{
-        color:gainsboro;}
-
-        p {
-            font-size: 14px;
-            line-height: 20px;
-        }
-
-        .text_area {
-            width: 80%;
-        }
-  }
-    
-
-    
-
-   
-
-
-
-
-
-
-

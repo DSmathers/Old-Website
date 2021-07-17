@@ -12,65 +12,56 @@
 
     </head>
     <body>
+        <nav id="navbar">
+            <a href="" id="logo">Daniel Smathers</a>
+            <ul id="page_nav_list">
+                <!--<a href="#about" class="page_nav">About</a>-->
+                <a href="#projects" class="page_nav">Projects</a>
+                <!--<a href="#services" class="page_nav">Services</a>-->
+                <a href="#contact" class="page_nav">Contact</a>
+            </ul>
+        </nav>
 
-       <div class="navbar">
-               <ul class="main_nav" id="main_nav">
-                   <li><a href="#about">About</a></li>
-                   <li><a href='#projects'>Projects</a></li>
-                   <li><a href="#services">Services</a></li>
-                   <li><a href="#contact">Contact</a></li>
-               </ul>
-        </div>
-
-       <main>
-           <div id="banner" class="banner_section"></div>
-
-           <div id="about" class="page_section1">
-                <div class="text_area">
-                    <h1>About Me:</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero cupiditate ut, earum vero fugiat dolorem quae eaque eligendi provident adipisci deserunt natus. Voluptatum rerum perferendis unde aliquid nihil fuga ab dignissimos eaque! Obcaecati, accusamus officiis voluptas assumenda reprehenderit blanditiis distinctio ipsa voluptate reiciendis tempora nemo, quisquam velit iusto quis?</p>
-                </div> 
-            </div>
-
-           <div id="projects" class="page_section2">
-                <div class="text_area">
-                    <h1>Projects</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero cupiditate ut, earum vero fugiat dolorem quae eaque eligendi provident adipisci deserunt natus. Voluptatum rerum perferendis unde aliquid nihil fuga ab dignissimos eaque! Obcaecati, accusamus officiis voluptas assumenda reprehenderit blanditiis distinctio ipsa voluptate reiciendis tempora nemo, quisquam velit iusto quis?</p>
-                </div>
-           </div>
-
-           <div id="services" class="page_section1">
-             <div class="text_area">
-                <h1>Services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, libero cupiditate ut, earum vero fugiat dolorem quae eaque eligendi provident adipisci deserunt natus. Voluptatum rerum perferendis unde aliquid nihil fuga ab dignissimos eaque! Obcaecati, accusamus officiis voluptas assumenda reprehenderit blanditiis distinctio ipsa voluptate reiciendis tempora nemo, quisquam velit iusto quis?</p>
-             </div>
-             </div>
-
-           <div id="contact" class="page_section2">
-            
-                <h1>Contact Me</h1>
-               
-                    <div class="wrapper">
-                        <form action="https://formspree.io/f/mvodbqwp" method="POST" class="contact-form">
-                        <div class="input-fields">
-                            <input type="text" class="input" placeholder="Name">
-                            <input type="text" class="input" name="subject" placeholder="Subject">
-                            <input type="text" name ="_replyto" class="input" id="email" placeholder="Email Address">
-                        </div>
-                        <div class="msg">
-                            <textarea placeholder="Your Message..." name="message"></textarea>
-                            <input class="btn" id="send_email_btn" type="submit" name="Send" />
-                        </form>
-                        </div>
-                    </div>
-                </div>
+        <section id="welcome-section" class="page_section">
+            <h1>Daniel L Smathers</h1>
+        </section>
+        <!--
+        <section id="about" class="page_section">
+            <h1 class="section_title"> About </h1>
+            <p class="text_area">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto nam praesentium ut illo officia tempore dicta asperiores eius neque recusandae quis adipisci repellat eaque dolor, voluptatibus quidem! Numquam perspiciatis, autem fuga officiis alias suscipit aut ducimus incidunt reprehenderit ipsa expedita unde. Quos nulla unde soluta? Sequi aspernatur sed quibusdam soluta.</p>
+        </section>
+    -->
            
-            
+        <section id="projects" class="page_section">
+            <h1 class="section_title">Projects</h1>
+            <div id="projects-grid">
+                <a href="https://codepen.io/D-Smathers/full/PoGwOwg" target="_none" class="project-tile">
+                    <img src="images/technicalCodePen.jpg" class="project-thumbnail" />
+                    <p class="project_title">Technical Documentation</p>
+                </a>
+                <a href="https://github.com/DSmathers/CompoundInterestCalc" target="_none" class="project-tile">
+                    <img src="images/compoundInterestCalc.jpg" class="project-thumbnail" />
+                    <p class="project_title">Compound Interest Calc</p>
+                </a>
+               
+            </div>
+                <a href="https://www.freecodecamp.org/smathers_daniel" target="_blank" id="profile-link">freeCodeCamp</a>
+                <a href="https://codepen.io/D-Smathers" target="_blank" id="profile-link">CodePen</a>
+                <a href="https://github.com/dsmathers" target="_blank" id="profile-link">GitHub</a>
+        </section>
+           
+           <!--
+        <section id="services" class="page_section">
+            <h1 class="section_title">Services</h1>
+            <p class="text_area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad officia exercitationem debitis dignissimos alias molestias dolorum adipisci vero, illum dolores consequuntur optio veritatis quas culpa tempora maiores ea repellat, itaque sed. Esse labore iusto commodi incidunt, quasi placeat voluptatum perspiciatis est eveniet explicabo nisi aliquid voluptates amet aperiam inventore.</p>
+        </section>
+    -->
 
-       </main>
 
- 
-        
+        <section id="contact" class="page_section">
+            <h1 class="section_title">Contact</h1>
+        </section>
+
         <script src="behavior.js" async defer></script>
     </body>
 </html>
