@@ -73,7 +73,7 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url(images/laptopbg.jpg);
+    background-image: url(Images/laptopbg.jpg);
     background-size: cover;
     color: gainsboro;
 }
