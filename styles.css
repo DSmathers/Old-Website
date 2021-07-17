@@ -26,7 +26,6 @@ a{text-decoration: none;}
     padding: 20px;
     font-size: 32px;
     color: gainsboro;
-    border-left: 1px solid gainsboro;
 }
 
 #logo   {
@@ -101,7 +100,6 @@ a{text-decoration: none;}
     display: grid;
     background-color: black;
     color: gainsboro;
-    box-shadow: 2px 2px black;
 }
 
 .project-thumbnail  {
@@ -117,8 +115,7 @@ a{text-decoration: none;}
 }
 
 .project-tile:hover{
-    border: 3px inset black;
-    box-shadow: 0px 0px;
+    box-shadow: 2px 2px black;
 }
 
 
@@ -148,4 +145,29 @@ a{text-decoration: none;}
 
 .text_area  {
     width: 65%;
+}
+
+/*Resizes project tiles and rearranges grid for smaller desktop screens*/
+@media(max-width: 1200px) and (min-width: 800px)  {
+    .project-tile {
+        width: 360px;
+    }
+
+    #projects-grid  {
+        grid-gap: 15px;
+        max-width: 100%;
+    }
+
+    .page_section{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 799px)    {
+    #projects-grid  {
+        flex-direction: column;
+        grid-gap: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
